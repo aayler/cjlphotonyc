@@ -12,3 +12,86 @@ Template: twentythirteen
 
 /* =Theme customization starts rye here
 -------------------------------------------------------------- */
+#page {
+	border: none;
+}
+
+a.home-link {
+	background: url('images/CJL LOGO BLUERED Solid.jpg') no-repeat 0;
+}
+
+h1.site-title, h2.site-description {
+	padding-left: 115px;
+}
+
+#post-56 .entry-content {
+	max-width: 1600px;
+}
+
+ul.fgallery {
+	display: block;
+	list-style-type: none;
+}
+
+ul.fgallery li {
+	float: left;
+	border: 1px solid #eeeeee;
+	padding: 5px;
+	margin: 5px;
+}
+
+ul.fgallery img {
+
+}
+
+.site-footer {
+	background-color: #fff;
+}
+
+/* Galleries */
+#gallerygrid {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+   
+}
+#gallerygrid img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #gallerygrid {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #gallerygrid {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #gallerygrid {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #gallerygrid {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
